@@ -11,6 +11,11 @@ html, body {
    padding: 0;
    }
 
+   a{
+      text-decoration: none;
+      color:rgb(44, 44, 44);
+   }
+
    li{
       list-style: none;
    }
@@ -184,7 +189,12 @@ html, body {
    .navigation-list li:hover{
       color: #0065FC;
       text-decoration: none;
-      border-top:2px solid #0065FC;  
+      border-top:2px solid #0065FC; 
+      cursor:pointer;
+   }
+
+   .navigation-list li:hover a{
+      color: #0065FC;
    }
 
    #searchEngine .button{
@@ -227,6 +237,12 @@ html, body {
       margin-right: 20px;
       cursor: pointer;
       margin-bottom:10px;
+   }
+
+   .filtre-style:hover{
+      background:#DEEBFF;
+      color: #0065FC;
+      border: 1px solid #DEEBFF;
    }
 
    .filtre-style i{
@@ -308,7 +324,21 @@ html, body {
    }
 
    aside article .imgArticle{   
-    width: 40%;   
+    width: 40%; 
+   }
+
+   aside article .imgArticle img{
+      max-width: 150%;
+      height: auto;
+      object-fit: fill;
+   }
+
+   aside article a{
+     display: flex;
+   } 
+   
+   aside article .contentArticle{
+     width: 60%;
    }
 
    .float-right{
@@ -317,6 +347,7 @@ html, body {
 
    .contentArticle{
       padding:3%;
+      
    }
 
    #activite .contentArticle{
@@ -328,6 +359,13 @@ html, body {
       height: 100px;
       overflow: hidden;
    }
+
+   img{
+      max-width:100%;
+      height: auto;
+      object-fit: cover;
+   }
+
    .d-img{
       width: 100%;
    }
@@ -403,59 +441,6 @@ html, body {
       background:url('../img/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg') center center;
       height: 85%;
       background-size: cover;
-   }
-
-   .imgArticle.eau{
-      background:url('../img/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg') center center;
-      background-size: cover;
-      width:76%;
-   }
-   
-   .imgArticle.bleublanc{
-      background:url('../img/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg') center center;
-      background-size: cover;
-      width:50%;
-   }
-   
-   .imgArticle.soleil{
-      background:url('../img/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg') center center;
-      background-size: cover;
-      width:50%;
-   }
-   
-   .imgArticle.canebiere{
-      background:url('../img/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg') center center;
-      background-size: cover;
-    
-   }
-   
-   .imgArticle.port{
-      background:url('../img/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg') center center;
-      background-size: cover;
-    
-   } 
-   
-   .imgArticle.mouette{
-      background:url('../img/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg') center center;
-      background-size: cover;
-    
-   }
-   
-   .imgArticle.mer{
-      background:url('../img/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg') center center;
-      background-size: cover;
-    
-   }
-   .imgArticle.panier{
-      background:url('../img/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg') center center;
-      background-size: cover;
-    
-   }
-   
-   .imgArticle.amina{
-      background:url('../img/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg') center center;
-      background-size: cover;
-    
    }
    
    .column.first article{
