@@ -31,8 +31,9 @@ html, body {
    .titleh1{
       font-size: 1.2rem;
       font-weight: 800;
+      margin-top: 0;
    }
-   #activite h2{
+   #activite h3{
       padding-left:10px;
    }
 
@@ -305,7 +306,9 @@ html, body {
       
    }
 
-   article h2{
+   .contentArticle h3,
+   .contentArticle h2,
+   article h3{
       font-size: 0.8rem;
    }
 
